@@ -18,11 +18,14 @@ const Content = ({allCurrencies}) =>{
     const rows = allCurrencies? Object.entries(allCurrencies[1]) : [];
 
     return(
-        <Box>
+        <Box sx={{width:"100%", display: 'flex', justifyContent: 'center',}}>
             <Box style={{
+                width:"100%",
                 display: 'flex',
                 justifyContent: 'space-between',
-                padding: "40px"
+                padding: "40px",
+                maxWidth:'900px',
+                flexWrap: "wrap"
             }}>
                 
             <Card style={{height: "500px",maxWidth: '300px', overflowY:"scroll"}}><CurrenciesList rows={rows}>

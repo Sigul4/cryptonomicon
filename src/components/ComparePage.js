@@ -58,7 +58,12 @@ export const ComparePage = () =>{
             padding:'40px'
         }}
         >
-            <Box>
+            <Box sx={{
+            height:"80%",
+            display: "flex",
+            flexDirection:"column",
+            justifyContent: "space-between",
+            }}>
 
                 <Typography>
                     <h1>Один {firstCurrency[0]}  равен {secondCurrency[1]} {secondCurrency[0]}</h1>
